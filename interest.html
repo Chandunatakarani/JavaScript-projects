@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interest</title>
+</head>
+<body>
+    
+    <input type="text" id="amount" placeholder="amount">
+    <input type="date" id="date" placeholder="date">
+    <input type="date" id="date1" placeholder="date1">
+    <input type="text" id="percentage" placeholder="percentage">
+
+    <input type="button" value="calculateInterest" id="btn" onclick="man()">
+    <script>
+        function man(){
+        let amt=document.getElementById('amount').value;
+        let loandate= new Date(document.getElementById('date').value);
+        let today=new Date(document.getElementById('date1').value);
+        let year=today.getFullYear()-loandate.getFullYear();
+        let month=today.getMonth()-loandate.getMonth();
+        let date=today.getDate()-loandate.getDate();
+        // console.log('time is'+year+'year,'+month+'months and '+date+'days')
+        let time= (year+(month/12)+(date/365))
+        let per=document.getElementById('percentage').value;
+        let cal=((amt*time*per)/100)*12;
+        console.log(cal);
+        }
+    
+  
+    </script>
+</body>
+</html>

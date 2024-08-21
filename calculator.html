@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip calculator</title>
+</head>
+<body>
+    <label for="amount">Amount</label>
+    <input type="text" id="amount" placeholder="Amount">
+    <label for="percentage">percentage </label>
+    <input type="text" id="percentage" placeholder="percentage %">
+    <input type="button" id="btn" value="CalculateAmount" onclick="amg()">
+
+    <script>
+        function amg(){
+       let amm=document.getElementById('amount').value;
+       let per=document.getElementById('percentage').value;
+       document.write(amm/100*per)
+        }
+    </script>
+    
+</body>
+</html>

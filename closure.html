@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+
+<body>
+    <script>
+        // function mit(name){
+        //           return Math.max(...name)
+        // }
+        // numbers=[23,45,65,76,888];
+        // console.log(mit(numbers));
+        // function outer(a){
+        //     return a;
+        //     function inner(b){
+        //         return b;
+        //         function inner1(c){
+        //             return a+b+c;
+        //         }
+        //         inner1()
+        //         // let output=inner1;
+        //         // console.log(output)
+        //     }
+        //     inner()
+        // }
+        // outer()
+        // let nit=outer(6)(6)(8)
+        // console.log(nit);
+        // function outer() {
+        //     let a = prompt("no1")
+        //     function inner() {
+        //         let b = prompt("no2")
+        //         function inner1() {
+        //             let c = prompt("no3")
+        //             let a1 = Number(a);
+        //             let b1 = Number(b);
+        //             let c1 = Number(c);
+        //             let d = a1+b1+c1;
+        //             if (d % 2 == 0) {
+        //                 console.log("even");
+        //             }
+        //             else {
+        //                 console.log("odd");
+        //             }
+        //         }
+        //     inner1()
+        // }
+        // inner()
+        // }
+        // outer()
+        // function name(value){
+        //     function names(values){
+        //         function namess(valuess){
+        //             console.log(value*values*valuess)
+        //         }
+        //         namess(4)
+        //         console.log(value*values)
+        //     }
+        //     names(9)
+        // }
+        // name(5)
+        // function close(a){
+        //     function close1(b){
+        //         // return a*b;
+        //         function close2(c){
+        //             let d= a+b+c;
+        //             console.log(d)
+        //             if(d%2==0){
+        //                 console.log("even")
+        //             }
+        //             else{
+        //                 console.log("odd")
+        //             }
+
+        //         }
+        //         return close2
+        //     }
+        //     return close1
+        //     //  let out=close1(2)(3)
+        //     //  console.log(out)
+        // }
+        //  close(2)(3)(8)
+        //  console.log(output)
+        //  let output=close(6)(3)(6);
+        //  console.log(output)
+        
+        
+    //     let name="chandu"
+    //     {
+            
+            
+    //         let names="local chandu"
+    //            console.log(name)
+    //     }
+    // console.log(name);
+    // console.log(names)  
+    // function outer(x){
+    //     function inner(y){
+    //         function inner1(z){
+    //             console.log(x+y+z)
+    //         }
+    //         inner1(2)
+    //     }
+    //     inner(3)
+    // }
+    // outer(4)
+
+    // let st=new String("natakarani ,chandu"
+    // let st1=new String("natakarani chandu")
+
+    // console.log(st.concat(st1))
+    // console.log(st.includes("chandu"))
+    // console.log(st.indexOf('k'))
+    // console.log(st.lastIndexOf('k'))
+    // console.log(st.replace('chandu','mit'))
+    // console.log(st.slice(9))
+    // console.log(st.split(','))
+
+//    let table=prompt("enter the number");
+//        for(i=1;i<=10;i++){
+//         document.write(table+'x'+i+'='+i*table+'<br>');
+//        }
+
+//   let str="my name is chandu";
+//   document.write(str.split('').reverse('').join(''));
+
+// function reverseWords(str) {
+//     const words = str.split(" ");
+//     const reversedWords = words.map ((word) =>
+// word.split("").reverse().join("")
+// );
+// return reversedWords.join(" ");
+// }
+// document.write(reverseWords("my name is chandu"));  
+
+
+
+// function reverse(str){
+//             let thing=str.split(' ');
+//             let things=thing.map ((word)=>word.split('').reverse().join(''));
+//             return things.join(' ');
+// }
+// console.log(reverse('this is the example'))
+// function gap(str){
+//    let thing=str.split(' ');
+//     let things=thing.map  ((word)=> word.split(' ').reverse().join(' '));
+//     return things.join(' ');
+// }
+// console.log(gap('this is the example for reversing of the string'));
+
+const greet = function() {
+  return "Hello, World!";
+};
+console.log(greet())
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table task</title>
+</head>
+<body>
+    <div id="pic"></div>
+<div id="pic2"></div>
+    <script>
+        let fig=document.createElement('figure')
+        let img=document.createElement('img')
+        img.setAttribute('src','../media/logo.png')
+        // img.setAttribute('width','300px')
+        // img.setAttribute('height','300px')
+        img.setAttribute('alt','Achieverit logo')
+        let figcap=document.createElement('figcaption')
+        let text=document.createElement('textNode')
+        text.textContent='alt fig1'
+        figcap.appendChild(text)
+        fig.appendChild(img)
+        fig.appendChild(figcap)
+        console.log(fig)
+        
+       document.getElementById('pic').innerHTML=fig.innerHTML;
+    //    let table=document.createElement('table');
+    //    let tabletr=document.createElement('tr');
+    //    let tablehd=document.createElement('th');
+    //    let tabledt=document.createElement('td');
+    //    tabledt.setAttribute('td','1  Chandu 22 Nellore 8688208544')
+    //          tablehd.setAttribute('th','S.no Name Age Address ContactNumber')
+    //         tablehd.appendChild(tabledt);
+    //         tabletr.appendChild(tablehd)
+    //          table.appendChild(tabletr)
+       
+
+    //    console.log(table)
+    //    document.getElementById('pic2').innerHTML=table.innerHTML;  
+    let table1=document.createElement('table');
+    let tabletr=document.createElement('tr');
+    let tablehd=document.createElement('th');
+    table1.setAttribute('border','3')
+    table1.setAttribute('cellspacing','0')
+    tablehd.textContent='S.no';
+    tabletr.appendChild(tablehd)
+    table1.appendChild(tabletr)
+
+
+    let tablehd1=document.createElement('th')
+    tablehd1.textContent='Name';
+    tabletr.appendChild(tablehd1)
+    
+
+    let tablehd2=document.createElement('th')
+    tablehd2.textContent='Age';
+    tabletr.appendChild(tablehd2)
+    
+
+    let tablehd3=document.createElement('th')
+    tablehd3.textContent='Address';
+    tabletr.appendChild(tablehd3)
+    
+
+    let tablehd4=document.createElement('th')
+    tablehd4.textContent='ContactNumber';
+    tabletr.appendChild(tablehd4)
+
+
+    let table2=document.createElement('tr');
+    let tablehead=document.createElement('th');
+    tablehead.textContent='1'
+    table2.appendChild(tablehead)
+    table1.appendChild(table2)
+
+    let tablehead1=document.createElement('th'); 
+    tablehead1.textContent='chandu'
+    table2.appendChild(tablehead1)
+    table1.appendChild(table2)
+
+    let tablehead2=document.createElement('th'); 
+    tablehead2.textContent='22'
+    table2.appendChild(tablehead2)
+    table1.appendChild(table2)
+
+    let tablehead3=document.createElement('th'); 
+    tablehead3.textContent='Nellore'
+    table2.appendChild(tablehead3)
+    table1.appendChild(table2)
+
+    let tablehead4=document.createElement('th'); 
+    tablehead4.textContent='8688208544'
+    table2.appendChild(tablehead4)
+    table1.appendChild(table2)
+
+    let table3=document.createElement('tr');
+    let tablehead5=document.createElement('th');
+    tablehead5.textContent='2'
+    table3.appendChild(tablehead5)
+    table1.appendChild(table2)
+
+    let tablehead6=document.createElement('th'); 
+    tablehead6.textContent='lokesh'
+    table3.appendChild(tablehead6)
+    table1.appendChild(table2)
+
+    let tablehead7=document.createElement('th'); 
+    tablehead7.textContent='22'
+    table3.appendChild(tablehead7)
+    table1.appendChild(table2)
+
+    let tablehead8=document.createElement('th'); 
+    tablehead8.textContent='tirupathi'
+    table3.appendChild(tablehead8)
+    table1.appendChild(table2)
+
+    let tablehead9=document.createElement('th'); 
+    tablehead9.textContent='8688208548'
+    table3.appendChild(tablehead9)
+    table1.appendChild(table3)
+
+
+    let table4=document.createElement('tr');
+    let tablehead10=document.createElement('th');
+    tablehead10.textContent='3'
+    table4.appendChild(tablehead10)
+    table1.appendChild(table4)
+
+    let tablehead11=document.createElement('th'); 
+    tablehead11.textContent='bhargav'
+    table4.appendChild(tablehead11)
+    table1.appendChild(table4)
+
+    let tablehead12=document.createElement('th'); 
+    tablehead12.textContent='22'
+    table4.appendChild(tablehead12)
+    table1.appendChild(table4)
+
+    let tablehead13=document.createElement('th'); 
+    tablehead13.textContent='venkatagiri'
+    table4.appendChild(tablehead13)
+    table1.appendChild(table4)
+
+    let tablehead14=document.createElement('th'); 
+    tablehead14.textContent='8688208654'
+    table4.appendChild(tablehead14)
+    table1.appendChild(table4)
+
+
+    console.log(table1)
+    document.getElementById('pic2').appendChild(table1)
+
+    </script>
+    
+</body>
+</html>

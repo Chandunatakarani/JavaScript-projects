@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <style>
+        form {
+            border: 2px solid green;
+            margin: 100px;
+            padding: 50px;
+            width: 150px;
+
+        }
+
+        input {
+            margin: 10px;
+        }
+
+        span {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+        <h2>Login Form</h2>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+            <span id="emd">Enter Email Adress</span>
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <span id="pwd">Enter Password</span>
+            <input type=button value="login" id="btn" onclick="ths()">
+        </form>
+    </div>
+    <script>
+        
+        function ths() {
+            let email = document.getElementById('email').value;
+            if (email== '') {
+                document.getElementById('emd').style.display = 'block'
+            }
+            else {
+                document.getElementById('emd').style.display = 'none'
+            }
+            let password=document.getElementById('password').value;
+            if(password==''){
+                document.getElementById('pwd').style.display='block'
+            }
+            else{
+                document.getElementById('pwd').style.display = 'none'
+
+            }
+            if(email != '' && password !=''){
+                alert('login successful')
+            }
+
+        }
+       
+        // document.getElementById('btn')
+
+    </script>
+
+</body>
+
+</html>

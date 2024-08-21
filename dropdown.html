@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+</head>
+<body>
+    <select id="year">
+
+    </select>
+    <script>
+        select='<option>year</option>'
+        for(i=2024;i>=1970;i--){
+            select+='<option>'+i+'</option>'
+
+        }
+        document.getElementById('year').innerHTML=select;
+
+    </script>
+</body>
+</html>

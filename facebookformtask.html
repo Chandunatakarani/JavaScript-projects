@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook signup</title>
+    <style>
+        .signin{
+            border:3px solid green;
+            width:350px;
+            height:340px;
+            margin:250px;
+            margin-left: 30%;
+            padding:50px
+        }
+        
+        span{
+            color:red;
+        
+            display:none;
+        }
+        #input{
+            margin-top:50px;
+             margin-left:139px;
+              padding:5px; 
+              background-color: green;
+               color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="signin">
+        <form>
+            <label for="text1">First Name:</label>
+            <input type="text" id="text1" placeholder="First name" >
+            <span id="trt1">Enter First Name</span><br>
+
+            <label for="text2">Surname:</label>
+            <input type="text" id="text2" placeholder="Surname" style="margin-top:20px;">
+            <span id="trt2">Enter  Surname</span><br>
+
+            <label for="text3">Email:</label>
+            <input type="text" id="text3" placeholder="Mobile number or email address" style="width:50% ; margin-top:20px;">
+            <span id="trt3">Enter mobile number or email address</span><br>
+
+            <label for="text4">Password:</label>
+            <input type="text" id="text4" placeholder="New password" style="width:50%; margin-top:5px;">
+            <span id="trt4" style="margin-top:50px ;">Enter new password</span>
+
+            <input type="button" value="SignUp" id="input"  onClick="that()">
+        </form>
+    </div>
+    <script>
+       function that(){
+            let thing=document.getElementById('text1').value;
+            if(thing==''){
+                document.getElementById('trt1').style.display='block';
+            }
+            else{
+                document.getElementById('trt1').style.display='none';
+
+            }
+             
+             let thing1=document.getElementById('text2').value;
+            if(thing1==''){
+                document.getElementById('trt2').style.display='block';
+            }
+            else{
+                document.getElementById('trt2').style.display='none';
+
+            }
+            let thing2=document.getElementById('text3').value;
+            if(thing2==''){
+                document.getElementById('trt3').style.display='block';
+            }
+            else{
+                document.getElementById('trt3').style.display='none';
+
+            }
+            let thing3=document.getElementById('text4').value;
+            if(thing3==''){
+                document.getElementById('trt4').style.display='block';
+            }
+            else{
+                document.getElementById('trt4').style.display='none';
+
+            }
+
+            if(thing !='' &&thing1!='' &&thing2!='' &&thing3!=''){
+                alert('Account Created Successfully')
+            }
+             }
+             
+
+
+    </script>
+    
+</body>
+</html>
